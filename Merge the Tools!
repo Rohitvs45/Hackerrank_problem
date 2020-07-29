@@ -1,0 +1,11 @@
+ 
+from collections import OrderedDict 
+
+s=input()
+k=int(input())
+n=len(s)
+x=n//k
+for i in range(x):
+	str=s[k-3:k]
+	print("".join(OrderedDict.fromkeys(str)))
+	k=k+3
