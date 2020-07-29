@@ -1,0 +1,16 @@
+s=input()
+Stuart=0
+Kevin=0
+v=['A','E','I','O','U']
+for i in range(len(s)):
+	for j in range(i+1,len(s)+1):
+		sub=s[i:j]
+		if sub[0] in v:
+			Kevin=Kevin+1
+		else:
+			Stuart=Stuart+1
+
+if Kevin>Stuart:
+	print('Kevin ',Kevin)
+else:
+	print('Stuart ',Stuart)
